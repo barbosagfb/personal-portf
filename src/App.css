@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+  /* box-sizing: border-box;
+  margin: 0;
+  padding: 0; */
+  font-family: 'Roboto','Lato',sans-serif;
+  
+}
+
+body{
+  background-image: url(C:\Users\Vodafonee\Desktop\portfolio\personal-portf\src\assets\images\old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.webp);
+  background-repeat: space;
+  background-size: inherit;
+  width:100%;
+}
+
+.home, .resume, .about , .porfolios , .contacts{
+  display: flex;
+  height:90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
