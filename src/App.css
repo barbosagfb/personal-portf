@@ -11,10 +11,10 @@
 }
 
 body{
-  background-image: url(C:\Users\Vodafonee\Desktop\portfolio\personal-portf\src\assets\images\old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.webp);
+  /* background-image: url(C:\Users\Vodafonee\Desktop\portfolio\personal-portf\src\assets\images\old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.webp);
   background-repeat: space;
   background-size: inherit;
-  width:100%;
+  width:100%; */
 }
 
 .home, .resume, .about , .porfolios , .contacts{

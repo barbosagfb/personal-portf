@@ -22,20 +22,24 @@ const AboutPage = () => {
                 <span>{item.description}</span>
             </li>
           )})}
+</>
 
     {/* <li>Full Name:</li>
     <li>Age:</li>
     <li>Languages:</li>
   <li>Location:</li> */}
   
-
+<div className="button-container">
     <Link className="link"
           to="public\documents\CV_GUILHERME_BARBOSA.pdf"
           target="_blank"
-          download
-          ><button className="download-btn">DOWNLOAD CV</button> 
+          download>
+  <button className="download-btn">DOWNLOAD CV</button> 
         </Link>
-          </>
+</div>
+        {/* <div className="button-container">
+        <a className="botao" href="public\documents\CV_GUILHERME_BARBOSA.pdf">DOWNLOAD</a>
+        </div> */}
           </body>
   );
 }

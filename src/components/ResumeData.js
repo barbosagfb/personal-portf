@@ -51,4 +51,56 @@ export const ResumeData = [
   },
 ]
 
+
+export const Resume2Data = [
+  {
+    
+    description:'- Suporte back-end e front-end;',
+
+  },
+  {
+    
+    description:'- Atendimento e gerenciamento de incidentes;',
+
+  },
+  {
+    
+    description:'- Correção de falhas no código e adição de funcionalidades;',
+
+  },
+  {
+    
+    description:'- Fornecer suporte para os produtos e serviços da empresa;',
+
+  },
+  {
+    
+    description:'- Coletar informações sobre o problema para transmiti-lo;',
+
+  },
+  {
+    
+    description:'- Gerar relatórios e encontrar soluções a partir do banco de dados;',
+
+  },
+  {
+    
+    description:'- Gerenciamento e atualização banco de dados.',
+
+  },
+]
 // export const Resume2Data = []
+
+export const resumeJobData = [
+  {
+    title1:'CERS - Complexo de Ensino Renato Saraiva',
+    role:'Estagiário de Desenvolvimento'
+  },
+]
+
+
+
+
+
+
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/resumepage.css';
-import {ResumeData} from '../components/ResumeData';
+import {ResumeData , Resume2Data , resumeJobData} from '../components/ResumeData';
 
 const ResumePage = () => {
   return (
@@ -20,11 +20,28 @@ const ResumePage = () => {
           )
         })}
         </div>
-<div>
-      <h2>Resume</h2>
-      <li>CERS - Complexo de Ensino Renato Saraiva</li>
-      <li>JavaScript</li>
+<div className="resume-container2">
+        <div className="resume-title2">
+          <h2>Resume</h2>
+        </div>
+      <div className="resume-list2">
+        {resumeJobData.map((item,index)=>{
+          return(
+            <div className="joblist">
+          <h4 key={index}>{item.title1}</h4>
+          <h4>{item.role}</h4>
+            </div>
+          )
+        })}
+      {Resume2Data.map((item,index)=>{
+        return (
+          <div>
+          <li key={index}>{item.description}</li>
+          </div>
+        )
+      })}
       </div>
+  </div>
       </body>
   );
 }

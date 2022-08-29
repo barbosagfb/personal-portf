@@ -62,15 +62,23 @@ font-size:20px;
 .icon-i-whatsapp:hover{
   color: #319728;
   border: 3px solid #10300d;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
 }
 .icon-i-linkedin:hover{
   color: #1c7091;
   border: 3px solid #0f3442;
   /* border: 3px solid #144d64; */
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
 }
 .icon-i-github:hover{
-  color: #696969;
-  border: 3px solid #2c2c2c;
+  /* color: #696969;
+  border: 3px solid #2c2c2c; */
+  color: #c44800;
+  border: 3px solid #753900;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
 }
 
 .main-container{

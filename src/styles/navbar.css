@@ -1,5 +1,5 @@
 .navbar{
-  background-color: #060b26;
+  background-color: #000000;
   height: 80px;
   display: flex;
   justify-content: start;
@@ -16,7 +16,8 @@
 }
 
 .nav-menu{
-  background-color: #060b26;
+  background-color: #000000;
+  /* background-color: #060b26; */
   width: 250px;
   height:100vh;
   display: flex;
@@ -56,7 +57,8 @@
 
 .nav-text a:hover{
   /* background-color: #1a83ff; */
-  background-color: #5880af;
+  /* background-color: #5880af; */
+  background-color: #0075FF;
 }
 
 .nav-menu-items{
@@ -64,7 +66,7 @@
 }
 
 .navbar-toggle{
-  background-color: #060b26;
+  background-color: #000000;
   width:100%;
   height:80px;
   display: flex;
