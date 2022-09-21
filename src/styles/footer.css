@@ -1,8 +1,5 @@
-.footer-text{
+.footer-text label{
   display: flex;
-  justify-content: center;
-  align-self: flex-end;
-  margin-top: 350px;
-  margin-top: 45%;
-  align-items: flex-start;
+  margin-left: 20px;
+  margin-top: 570px;
 }

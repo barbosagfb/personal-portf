@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import { SidebarData } from '../components/SidebarData';
 import '../styles/navbar.css'
 import { IconContext } from 'react-icons';
+import {Footer} from '../components/Footer';
 
 
 const Navbar = () =>{
@@ -38,6 +39,7 @@ const Navbar = () =>{
               
           )
         })}
+      <Footer/>
       </ul>
     </nav>
     </IconContext.Provider>

@@ -11,31 +11,31 @@ export const ResumeData = [
     title:'React',
     icon:<FaIcons.FaReact/>,
     cName:'skill-list',
-    porcentage:90
+    porcentage:70
   },
   {
     title:'Javascript',
     icon:<IoIcons.IoLogoJavascript/>,
     cName:'skill-list',
-    porcentage:90,
+    porcentage:70,
   },
   {
     title:'HTML',
     icon:<IoIcons.IoLogoHtml5/>,
     cName:'skill-list',
-    porcentage:90,
+    porcentage:70,
   },
   {
     title:'CSS',
     icon:<IoIcons.IoLogoCss3/>,
     cName:'skill-list',
-    porcentage:90,
+    porcentage:80,
   },
   {
     title:'Firebase',
     icon:<SiIcons.SiFirebase/>,
     cName:'skill-list',
-    porcentage:90,
+    porcentage:30,
   },
   {
     title:'Git',
@@ -44,10 +44,16 @@ export const ResumeData = [
     porcentage:90,
   },
   {
+    title:'Typescript',
+    icon:<SiIcons.SiTypescript/>,
+    cName:'skill-list',
+    porcentage:70,
+  },
+  {
     title:'MySQL',
     icon:<GrIcons.GrMysql/>,
     cName:'skill-list',
-    porcentage:90,
+    porcentage:30,
   },
 ]
 

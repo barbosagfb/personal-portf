@@ -1,0 +1,98 @@
+.contact-title{
+  font-weight: bold;
+  font-size: 50px;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:30px;
+  margin-bottom: 60px;
+}
+
+.pg-container{
+  display: flex;
+  justify-content: center;
+  font-size:20px;
+}
+
+.message-container{
+  display: flex;
+  flex-direction:column;
+}
+
+.message-title{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.message-container label{
+  width: 200px;
+}
+.message-container textarea{
+  width: 500px;
+  height:50px;
+  border:5px;
+  border-color: white;
+  background-color: #292828;
+  color: #fefefe;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  resize: none;
+  font-size:20px;
+  text-align: justify;
+  display: flex;
+}
+.message-container .inputm{
+  width: 600px;
+  height:150px;
+  text-align: initial;
+}
+
+.buttons-container{
+  padding:10px 0;
+  display: flex;
+  justify-content:center;
+  gap:20px;
+}
+.buttons-container button{
+  width:90px;
+  height:40px;
+  background-color: #0075FF;
+  color: #fefefe;
+  border-color: #fefefe;
+  font-size: 15px;
+  border:none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons-container button:hover{
+  opacity: 60%;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1); }
+
+.pg-container{
+  display: flex;
+  gap: 50px;
+}
+
+.extra-container{
+  list-style: none;
+}
+
+.extra-content{
+  display: flex;
+  flex-direction: column;
+}
+  
+  
+.extra-content li{
+margin-bottom: 38px; 
+}
+
+.extra-label{
+  gap:5px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}

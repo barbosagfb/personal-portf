@@ -8,8 +8,12 @@ const AboutPage = () => {
     <body className="about-container">
     <>
     <div className="about-title">About me</div>
-      <ul className="about-list">
-    <span>Developer passionate about simple solutions to difficult problems. enthusiast of agile methods, flexible environments, and continuous delivery. meet new challenges and solve them</span>
+      <ul className="about-list-title">
+    <div>
+    </div>
+    <h7>Developer passionate about simple solutions to difficult problems.</h7>
+    <h7>enthusiast of agile methods, flexible environments, and continuous delivery.</h7>
+    <h7>i'm always trying to meet new challenges and solve them</h7>
     {/* <li>Developer passionate about simple solutions to difficult problems.</li>
     <li>Enthusiast of agile methods, flexible environments, and continuous delivery.</li>
     <li>Meet new challenges and solve them</li> */}
