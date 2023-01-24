@@ -5,7 +5,7 @@ import '../styles/footer.css';
 export function Footer() {
     return (
       <footer className="footer-text">
-        <label>@ 2022 - Personal Portfolio</label>
+        <label>@ 2023 - Personal Portfolio</label>
       </footer>
     )
   }
