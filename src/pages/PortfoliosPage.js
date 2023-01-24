@@ -1,10 +1,9 @@
 import React from 'react';
+// import {Link} from 'react-router-dom';
 import  {PortfoliosData}  from '../components/PortfoliosData';
 import '../styles/portfoliospage.css';
-// import GitHub from '@material-ui/icons/GitHub';
 import * as AiIcons from 'react-icons/ai'
 import * as BsIcons from 'react-icons/bs'
-// import LaptopChromebookIcon from '@material-ui/icons/LaptopChromebook';
 
 
 const PortfolioPage = () => {
@@ -19,12 +18,12 @@ return(
           <div className="icon-container">
           <ul className="icon-list">
                                     <li>
-                                        <a href={item.link1} target="_blank">
+                                        <a href={item.link1} target={item.link1} alt="Repository link">
                                             <AiIcons.AiFillGithub/>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href={item.link2} target="_blank">
+                                        <a href={item.link2} target={item.link2} alt="Application link">
                                             <BsIcons.BsLaptop/>
                                         </a>
                                     </li>

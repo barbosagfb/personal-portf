@@ -9,12 +9,13 @@ const ResumePage = () => {
       <div className="resume-container">
       {ResumeData.map((item,index) =>{
           return (
-            <div key={index} className={item.cName}>
+            <div key={index} className="items--">
+            {/* <div key={index} className={item.cName}> */}
                 {item.icon}
                 <p>{item.title}</p>
             <div className="progress-container">
                 <progress value={item.porcentage} max="100">{item.porcentage} %</progress>
-                <label>{item.porcentage}%</label>
+                {/* <label>{item.porcentage}%</label> */}
             </div>
             </div>
           )

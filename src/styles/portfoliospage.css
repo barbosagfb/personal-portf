@@ -15,10 +15,8 @@
   align-items: center;
   justify-items: center;
   text-align: center;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
-
-
 
 img{
   width:100%;
@@ -28,10 +26,10 @@ img{
 }
 
 
-.portfolios-card:hover{
+/* .portfolios-card img:hover{
  transform:scale(1.01);
  transition:ease 0.5s;
-}
+} */
 
 .portfolios-card p{
   font-size: 20px;
@@ -48,31 +46,29 @@ img{
 }
 
 .icon-list{
-  color: white;
   list-style: none;
   display:grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.icon-list li{
   margin: 20px;
+  gap: 50px;
+  position:absolute;
+  max-width:200px;
 }
 
-a{
-  width:5rem;
-  height:2rem;
-}
 
-.icon-list{
-  position: fixed;
-  top:-1;
-  z-index: -1;
-  max-width:20px;
+.icon-list svg{
+  border: 5px;
+  background-color: rgb(0, 162, 255);
+  /* fill: rgb(0, 162, 255); */
+  fill: #fff;
+  /* background-color: #fff; */
+  transform: scale(2.2);
+  display:flex;
   transition:ease .5s;
-  gap: 10px;
+  border-radius: 4px;
+  padding: 2px;
 }
 
-li{
-  transition:ease .5s;
-  transform: scale(2.5);
+.icon-list svg:hover{
+  transform:scale(3);
 }

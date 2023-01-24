@@ -1,9 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as AiIcons from 'react-icons/ai';
 import * as FaIcons from 'react-icons/fa';
 import '../styles/contactpage.css';
+import { login } from '../utils';
 
 const ContactPage = () => {
+const [name,setName]=useState('')
+const [subject,setSubject]=useState('')
+const [email,setEmail]=useState('')
+const [message,setMessage]=useState('')
+const [error,setError]=useState(null)
+const [loading,setLoading]=useState(false)
+const [invalid,setInvalid]=useState(true)
+
+
+const handleNameChange=(e)=>{
+  setName(e.target.value)
+}
+const handleSubjectChange=(e)=>{
+  setSubject(e.target.value)
+}
+const handleEmailChange=(e)=>{
+  setEmail(e.target.value)
+  if((email).length < 4){
+    setInvalid(true)
+  }else{
+    setInvalid(false)
+  }
+}
+const handleMessageChange=(e)=>{
+  setMessage(e.target.value)
+}
+
+const handleSubmit=()=>{
+  setError(null)
+  setLoading(true)
+
+  let values={
+    name:name,
+    subject:subject,
+    email:email,
+    message:message
+  }
+  login(values)
+.then(()=>{
+  console.log(JSON.stringify(values))
+  alert('your message was sent successfully')
+
+})
+.catch((error)=>{
+  setError(error)
+
+})
+.finally(()=>{
+  setLoading(false)
+})
+}
 
   return(
     <>
@@ -15,57 +67,66 @@ const ContactPage = () => {
       <div className="message-title"><label>Comments or suggestions? Send me a mail!</label></div>
       <label>Name</label>
       <form>
-        <textarea 
+        <input
         className=""
         placeholder=""
-        onChange={event=>(event.target.value)}
-        autocomplete="off"
+        onChange={handleNameChange}
+        // onChange={event=>(event.target.value)}
+        autoComplete="off"
         name="Name"
-        required
+        value={name}
         />
        {/* </form> */}
       <label>Subject</label>
       {/* <form> */}
-        <textarea 
+        <input 
         className=""
-        onChange={event=>(event.target.value)}
-        autocomplete="off"
+        onChange={handleSubjectChange}
+        autoComplete="off"
         name="Subject"
-        required
+        // value={subject}
         />
        {/* </form> */}
-      <label>Email</label>
+      <label htmlFor='email'>Email</label>
       {/* <form> */}
-        <textarea 
+        <input 
+        id="email"
+        type="email"
         className=""
         placeholder=""
-        onChange={event=>(event.target.value)}
-        autocomplete="off"
-        name="Email"
-        required
+        onChange={handleEmailChange}
+        autoComplete="off"
+        name="email"
+        value={email}
         />
+        {error && <div className='error-message'>{error.message}</div>}
        {/* </form> */}
       <label>Message</label>
       {/* <form> */}
-        <textarea 
+        <textarea
         className="inputm"
         placeholder=""
-        onChange={event=>(event.target.value)}
-        autocomplete="off"
+        onChange={handleMessageChange}
+        autoComplete="off"
         name="Message"
-        required
+        value={message}
         />
+      {/* <input class="inputm" name="message" type="text" autoComplete="off" value="" placeholder='You message'></input> */}
        </form>
-      {/* <input class="inputm" name="message" type="text" autocomplete="off" value="" placeholder='You message'></input> */}
-      <div className="buttons-container">
-      <button id="btn"type="submit">SEND</button>
-      <button type="submit">RESET</button>
+      <div disabled className="buttons-container">
+      <button
+      className='send-btn'
+      onClick={handleSubmit}
+      disabled={invalid || email === '' || name.length < 4 || subject.length < 4 || loading }
+      >SEND</button>
+      <button className="reset-btn" disabled={invalid || email === '' || name.length < 4 || subject.length < 4 || loading }
+      >RESET</button>
       </div>
         </div>
         <div className="extra-container">
           <div className="extra-content">
         <label className="extra-label">{<AiIcons.AiOutlinePhone/>} Phone</label>
-        <li>+5581 98705-6742</li>
+        <li>+55 81 98705-6742</li>
         <label className="extra-label">{<AiIcons.AiOutlineMail/>} Email</label>
         <li>barbosagfb@gmail.com</li>
         <label className="extra-label">{<FaIcons.FaMapPin/>} Adress</label>
