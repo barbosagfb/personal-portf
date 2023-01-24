@@ -32,6 +32,15 @@ const handleMessageChange=(e)=>{
   setMessage(e.target.value)
 }
 
+const handleResetBtn=()=>{
+  setName('')
+  setSubject('')
+  setEmail('')
+  setMessage('')
+  setError(null)
+}
+
+
 const handleSubmit=()=>{
   setError(null)
   setLoading(true)
@@ -46,10 +55,12 @@ const handleSubmit=()=>{
 .then(()=>{
   console.log(JSON.stringify(values))
   alert('your message was sent successfully')
+  handleResetBtn()
 
 })
 .catch((error)=>{
   setError(error)
+  setEmail('')
 
 })
 .finally(()=>{
@@ -84,7 +95,7 @@ const handleSubmit=()=>{
         onChange={handleSubjectChange}
         autoComplete="off"
         name="Subject"
-        // value={subject}
+        value={subject}
         />
        {/* </form> */}
       <label htmlFor='email'>Email</label>
@@ -117,9 +128,12 @@ const handleSubmit=()=>{
       <button
       className='send-btn'
       onClick={handleSubmit}
-      disabled={invalid || email === '' || name.length < 4 || subject.length < 4 || loading }
+      disabled={invalid || email === '' || name.length === '' || message.length < 4 || loading }
       >SEND</button>
-      <button className="reset-btn" disabled={invalid || email === '' || name.length < 4 || subject.length < 4 || loading }
+      <button 
+      className="reset-btn" 
+      onClick={handleResetBtn}
+      disabled={invalid || email === '' || name.length < 1 || subject.length < 1 || loading }
       >RESET</button>
       </div>
         </div>
